@@ -2,7 +2,7 @@
 
 # ct-management-frontend-ui-tests
 
-<SERVICE_NAME> UI journey tests.
+CT MANAGEMENT FRONTEND UI journey tests.
 
 ## Pre-requisites
 
