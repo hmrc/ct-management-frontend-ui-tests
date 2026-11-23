@@ -86,10 +86,25 @@ object AuthWizard extends BasePage {
     this
   }
 
+  def fillInputsAgent(): this.type = {
+    driver.findElement(affinityGroup).sendKeys("Agent")
+    driver.findElement(enrolmentKey).sendKeys("IR-CT-AGENT")
+    driver.findElement(enrolmentId).sendKeys("IRAgentReference")
+    driver.findElement(enrolmentValue).sendKeys("N12A36")
+    this
+  }
+
   def login(@unused loginType: LoginTypes, @unused userType: UserTypes, returnId: Option[String] = None): Unit = {
     AuthWizard.navigateToPage(url)
     sendKeys(redirectUrl, buildRedirectUrl(HASDIRECT, Organisation, returnId))
     fillInputs()
+    click(btnSubmit)
+  }
+
+  def loginAgent(@unused loginType: LoginTypes, @unused userType: UserTypes, returnId: Option[String] = None): Unit = {
+    AuthWizard.navigateToPage(url)
+    sendKeys(redirectUrl, buildRedirectUrl(HASDIRECT, Organisation, returnId))
+    fillInputsAgent()
     click(btnSubmit)
   }
 
