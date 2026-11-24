@@ -52,6 +52,11 @@ class ClientSpec
       // When("the user navigates to the View Clients page")
       // The user searches for clients
       // User clicks on search to get search results
+      // User clicks on edit link
+      // User edits Client reference
+      Then("User navigated to client reference updated screen")
+      ClientReferenceUpdated.navigateToPage(ClientReferenceUpdated.pageUrl)
+      ClientReferenceUpdated.verifyPageTitle(ClientReferenceUpdated.pageTitle)
       // User clicks on delete button for a client
       // User selects yes radio button
       Then("User navigated to client delete confirmation screen page")
