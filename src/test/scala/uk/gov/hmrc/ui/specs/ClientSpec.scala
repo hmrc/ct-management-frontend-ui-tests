@@ -57,14 +57,15 @@ class ClientSpec
       Then("User navigated to client reference updated screen")
       ClientReferenceUpdated.navigateToPage(ClientReferenceUpdated.pageUrl)
       ClientReferenceUpdated.verifyPageTitle(ClientReferenceUpdated.pageTitle)
+      // User navigates to client reference deletion confirmation screen for a client
+      Then("User navigated to client reference deleted confirmation screen page")
+      ClientReferenceDeletedConfirmation.navigateToPage(ClientReferenceDeletedConfirmation.pageUrl)
+      ClientReferenceDeletedConfirmation.verifyPageTitle(ClientReferenceDeletedConfirmation.pageTitle)
       // User clicks on delete button for a client
       // User selects yes radio button
       Then("User navigated to client delete confirmation screen page")
       ClientDeleteConfirmation.navigateToPage(ClientDeleteConfirmation.pageUrl)
       ClientDeleteConfirmation.verifyPageTitle(ClientDeleteConfirmation.pageTitle)
-      Then("User navigated to client reference deleted confirmation screen page")
-      ClientReferenceDeletedConfirmation.navigateToPage(ClientReferenceDeletedConfirmation.pageUrl)
-      ClientReferenceDeletedConfirmation.verifyPageTitle(ClientReferenceDeletedConfirmation.pageTitle)
     }
   }
 }
