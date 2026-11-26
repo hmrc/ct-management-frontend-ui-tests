@@ -20,8 +20,9 @@ import uk.gov.hmrc.ui.pages.BasePage
 
 object ClientReferenceUpdated extends BasePage {
 
-  override def pageUrl: String   =
+  override def pageUrl: String =
     "http://localhost:11201/ct-management/view-clients/client-name/manage-your-client-reference/confirm-client-reference/client-reference-updated/rt-34-56"
+
   override def pageTitle: String = "Client reference updated – View Corporation Tax – GOV.UK"
 
 }

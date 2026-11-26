@@ -21,8 +21,9 @@ import uk.gov.hmrc.ui.pages.BasePage
 
 object ClientReferenceDeletedConfirmation extends BasePage {
 
-  override def pageUrl: String   =
-    "http://localhost:11201/ct-management/view-clients/client-name/manage-your-client-reference/confirm-client-reference/client-reference-deleted/123"   
+  override def pageUrl: String =
+    "http://localhost:11201/ct-management/view-clients/client-name/manage-your-client-reference/confirm-client-reference/client-reference-deleted/123"
+
   override def pageTitle: String = "Client reference deleted – View Corporation Tax – GOV.UK"
 
 }
