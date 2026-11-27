@@ -20,8 +20,9 @@ import uk.gov.hmrc.ui.pages.BasePage
 
 object ClientDeleteConfirmation extends BasePage {
 
-  override def pageUrl: String   =
+  override def pageUrl: String =
     "http://localhost:11201/ct-management/view-clients/delete-client/client-deleted/123"
+
   override def pageTitle: String = "Client deleted – View Corporation Tax – GOV.UK"
 
 }
